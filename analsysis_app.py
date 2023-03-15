@@ -19,12 +19,18 @@ with st.sidebar:
 
 # Dataframe and Chart display section
 st.subheader('Interactive Data Table')
+
 df =pd.read_csv('slownik.csv')
 st.dataframe(df) 
+
 
 st.subheader('Bar Chart 📊')
 st.bar_chart(df,x = 'keywords',y='amount')
 
+st.subheader('Most Wanted📊')
+st.bar_chart(
+  x=['Excel','Degree','SQL','Making reports','SSIS','Tableau','Python'],
+y = [416,340,328,298,224,153,147])
 # Image upload and text input section
 st.subheader('An Image')
 st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg')
