@@ -28,8 +28,8 @@ st.subheader('Bar Chart 📊')
 st.bar_chart(df,x = 'keywords',y='amount')
 
 st.subheader('Most Wanted📊')
-df1 = pd.dataFrame(['Excel','Degree','SQL','Making reports','SSIS','Tableau','Python'],
-                   [416,340,328,298,224,153,147])
+df1 = pd.DataFrame([['Excel','Degree','SQL','Making reports','SSIS','Tableau','Python'],[416,340,328,298,224,153,147]],
+                   columns=['Most_wanted','Amount'])
 st.bar_chart(df1)
 # Image upload and text input section
 st.subheader('An Image')
