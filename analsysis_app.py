@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import altair as alt
 
 # Expander section
 with st.expander("About"):
@@ -22,7 +23,7 @@ df =pd.read_csv('slownik.csv')
 st.dataframe(df) 
 
 st.subheader('Bar Chart 📊')
-st.bar_chart(df)
+st.bar_chart(df,x = 'keywords',y='amount')
 
 # Image upload and text input section
 st.subheader('An Image')
