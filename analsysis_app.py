@@ -18,9 +18,7 @@ with st.sidebar:
 
 # Dataframe and Chart display section
 st.subheader('Interactive Data Table')
-df = pd.DataFrame(
-    ['Excel','Degree','SQL','Making reports','SSIS','Tableau','Python'],  # generates random numeric values!
-    columns=[416,340,328,298,224,153,147])
+df =pd.read_csv('slownik.csv')
 st.dataframe(df) 
 
 st.subheader('Bar Chart 📊')
