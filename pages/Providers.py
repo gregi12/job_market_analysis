@@ -11,8 +11,37 @@ providers = pd.read_csv(csv_path)
 
 st.subheader('Top offers providers 📊')
 
-st.write(providers)
-#providers_chart = alt.Chart(providers).mark_bar().encode(
- # x=alt.X('providers', sort=None),y= 'via'
-#)
-#st.altair_chart(providers_chart,use_container_width=True)
+st.write('Choose format of the data')
+tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
+
+with tab1:
+  
+  st.subheader('Top 15 keywords by amount 📊')
+  colors = ['r', 'b', 'g'] + ['grey'] * 12
+  fig = plt.figure()
+  plt.bar(df['keywords'], df['amount'],color=colors, edgecolor='black')
+  plt.xticks(rotation=90)
+  plt.ylabel('Amount')
+  # Display chart in Streamlit app
+  st.pyplot(fig)
+  
+
+with tab2:
+# Create bar chart sorted by value
+  st.subheader('Top 15 keywords by percentage 📊')
+  fig = plt.figure()
+  plt.bar(df['keywords'], df['percentage'],color=colors, edgecolor='black')
+  colors = ['r', 'b', 'g'] + ['grey'] * 12
+  # ustawienie kolorów słupków
+  plt.xticks(rotation=90)
+  plt.ylabel('%')
+
+  # Display chart in Streamlit app
+  st.pyplot(fig)
+
+
+
+
+
+with tab3:
+  st.write(df)
