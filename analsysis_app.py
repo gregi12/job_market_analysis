@@ -11,7 +11,7 @@ st.set_page_config(
 )
 # Expander section
 
-original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Good day to you, mysterious one, I would like to present you results of my analysis</p>'
+original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:500;">Good day to you, mysterious one, I would like to present you results of my analysis</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 
 # Sidebar section
