@@ -13,13 +13,13 @@ csv_path = os.path.join(BASE_DIR, '..', 'files', 'keywordsfull.csv')
 df = pd.read_csv(csv_path)
 # Uploading dataframe
 
-
+st.subheader('We clearly see that Excel is most wanted skill in data analytics market. It was found in over 60% of descriptions. A little less demand is sql and degree. Visualization tools have high demand aswell')
 # Tabs section
 st.write('Choose format of the data')
 tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 
 with tab1:
-
+  
   st.subheader('Top 15 keywords by amount 📊')
   colors = ['r', 'b', 'g'] + ['grey'] * 12
   fig = plt.figure()
