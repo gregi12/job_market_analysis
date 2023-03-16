@@ -1,5 +1,4 @@
 
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -32,5 +31,15 @@ if greet:
   st.write('👋 Hey! ',greet," it's nice to meet you" )
   st.write('My name is Grzegorz and as we already know each other and you are still here I will give brief overview of this analysis, app and maybe few words about me. ')
 
+col1, col2, col3 = st.beta_columns(3)
 
+# Dodawanie przycisków do kolumn
+with col1:
+    button1 = st.button("Przycisk 1")
+
+with col2:
+    button2 = st.button("Przycisk 2")
+
+with col3:
+    button3 = st.button("Przycisk 3")
 
