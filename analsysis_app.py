@@ -45,7 +45,7 @@ if greet:
         st.markdown(original_title, unsafe_allow_html=True)
   with col2:
       if st.button("About app"):
-        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">In upper left corner you can see navigation links, every one of them is for specific part of visualization . Whenever there is info about percentage , it means percentage of all offers after I deleted duplicates, so eventually on 994 offers. </p>'
+        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">In upper left corner you can see navigation links, every one of them is for specific part of visualization . Whenever there is info about percentage , it means percentage of all offers after duplicates were deleted, so eventually on 994 offers. </p>'
         st.markdown(original_title, unsafe_allow_html=True)
 
   with col3:
