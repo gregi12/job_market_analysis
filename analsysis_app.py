@@ -45,7 +45,7 @@ if greet:
         st.markdown(original_title, unsafe_allow_html=True)
   with col2:
       if st.button("About app"):
-        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data.</p>'
+        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">In upper left corner you can see navigation links, every one of them is for specific aspect. Whenever there is info about percentage , it means percentage of all offers after I deleted duplicates, so on 994 offers. </p>'
         st.markdown(original_title, unsafe_allow_html=True)
 
   with col3:
