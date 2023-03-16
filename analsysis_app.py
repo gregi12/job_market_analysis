@@ -33,13 +33,10 @@ if greet:
 
 
 
-left_margin_col = st.beta_column(1)
+margin_col = st.beta_column(1)
 
 # Tworzenie trzech przycisków w trzech kolumnach
 button_col1, button_col2, button_col3 = st.beta_columns(3)
-
-# Tworzenie kolumny marginesu po prawej stronie
-right_margin_col = st.beta_column(1)
 
 # Dodawanie przycisków do kolumn
 with button_col1:
@@ -50,9 +47,3 @@ with button_col2:
 
 with button_col3:
     button3 = st.button("Przycisk 3")
-
-# Wypełnienie wolnej przestrzeni kolumnami marginesu
-with left_margin_col:
-    st.write("")
-with right_margin_col:
-    st.write("")
