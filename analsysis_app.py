@@ -44,7 +44,12 @@ if greet:
         st.markdown(original_title, unsafe_allow_html=True)
   with col2:
       if st.button("About app"):
+        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data.</p>'
+        st.markdown(original_title, unsafe_allow_html=True)
 
   with col3:
       if st.button("About me"):
+        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data.</p>'
+        st.markdown(original_title, unsafe_allow_html=True)
+
 
