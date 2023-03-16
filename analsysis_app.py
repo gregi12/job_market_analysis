@@ -27,7 +27,7 @@ with st.sidebar:
 
 st.subheader('Top offers providers 📊')
 # Image upload and text input section
-providers = pd.read_csv('files\\keywordsfull.csv')
+providers = pd.read_csv(r'pages\files\keywordsfull.csv')
 st.write(providers)
 #providers_chart = alt.Chart(providers).mark_bar().encode(
  # x=alt.X('providers', sort=None),y= 'via'
