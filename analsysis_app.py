@@ -27,7 +27,7 @@ df =pd.read_csv('keywords.csv')
 df = df.sort_values('amount',ascending=False)
 
 # Create bar chart sorted by value
-
+fig = plt.figure()
 plt.bar(df['keywords'], df['amount'])
 plt.xticks(rotation=90)
 plt.title('Sorted Bar Chart')
