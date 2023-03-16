@@ -27,7 +27,7 @@ df =pd.read_csv('keywords.csv')
 df = df.sort_values('amount',ascending=False)
 
 # Tabs section
-st.subheader('Tabs')
+st.subheader('Choose format of the data')
 tab1, tab2 = st.tabs(["Quantity", "Percentage"])
 
 with tab1:
