@@ -32,7 +32,7 @@ with tab2:
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
   colors = ['#de2d26', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
-  plt.pie(providers['Via'], providers['Percentage'],color=colors,
+  plt.pie(labels =providers['Percentage'], providers['Via'], color=colors,
         startangle = 90,
         shadow = True,
         explode =(0,0.1,0,0,0),
