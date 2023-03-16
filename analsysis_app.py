@@ -48,8 +48,3 @@ if greet:
   with col3:
       if st.button("About me"):
 
-
-
-
-
-if st.button():
