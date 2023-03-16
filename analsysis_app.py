@@ -1,3 +1,5 @@
+import sys
+sys.path.append(r'C:\Users\komputer\Desktop\aktualne\environment\serpapi\job_analysis\Lib\site-packages')
 import streamlit as st
 import pandas as pd
 import numpy as np
