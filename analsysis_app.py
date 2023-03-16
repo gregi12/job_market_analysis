@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import altair as alt
 import matplotlib.pyplot as plt
-sys.path.append('C:\Users\komputer\Desktop\aktualne\environment\serpapi\job_analysis\Lib\site-packages')
+
 st.set_page_config(
   page_title='Job market analsysis',
   page_icon = '📊'
