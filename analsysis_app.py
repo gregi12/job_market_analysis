@@ -29,11 +29,11 @@ df = df.sort_values('amount',ascending=False)
 
 # Tabs section
 st.write('Choose format of the data')
-tab1, tab2 = st.tabs(["Quantity", "Percentage"])
+tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 
 with tab1:
 
-  st.subheader('Top 15 keywords 📊')
+  st.subheader('Top 15 keywords by amount 📊')
   fig = plt.figure()
   plt.bar(df['keywords'], df['amount'])
   plt.xticks(rotation=90)
@@ -46,8 +46,15 @@ with tab1:
 
 with tab2:
 # Create bar chart sorted by value
-  st.write('WOW!')
-  st.image("https://i.gifer.com/DJR3.gif", width=400)
+  st.subheader('Top 15 keywords by percentage 📊')
+  fig = plt.figure()
+  plt.bar(df['keywords'], df['amount'])
+  plt.xticks(rotation=90)
+  plt.xlabel('Keyword')
+  plt.ylabel('Amount')
+
+  # Display chart in Streamlit app
+  st.pyplot(fig)
 
 
 
@@ -55,10 +62,6 @@ with tab2:
 
 
 
-# Display chart in Streamlit app
-st.altair_chart(chart, use_container_width=True)
-
-st.bar_chart(df,x = 'keywords',y='amount')
 
 # Dataframe and Chart display section
 st.subheader('Interactive Data Table')
