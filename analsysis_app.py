@@ -23,6 +23,14 @@ with st.sidebar:
     st.write(' ')
 
 df =pd.read_csv('keywords.csv')
+df = df.sort_values('Amount',ascending=False)
+chart = alt.Chart(df).mark_bar().encode(
+    x='keywords',
+    y=alt.Y('amount', sort='-y')
+)
+
+# Display chart in Streamlit app
+st.altair_chart(chart, use_container_width=True)
 st.subheader('Top 15 keywords 📊')
 st.bar_chart(df,x = 'keywords',y='amount')
 
