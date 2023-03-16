@@ -41,7 +41,7 @@ with tab1:
   plt.ylabel('Amount')
 
   # Display chart in Streamlit app
-  st.pyplot()
+  st.pyplot(fig)
   
 
 with tab2:
