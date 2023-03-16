@@ -3,8 +3,13 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
+
+st.set_page_config(
+  page_title='Job market analsysis',
+  page_icon = '📊'
+)
 # Expander section
-with st.expander("About"):
+with st.expander("Here I explain how I obtained data"):
   st.write("""Trying to add a data table, chart, sidebar button with 
           ballons, an image, text input & exploring tabs!""")
 
@@ -19,18 +24,13 @@ with st.sidebar:
 
 # Dataframe and Chart display section
 st.subheader('Interactive Data Table')
-
-df =pd.read_csv('slownik.csv')
+df =pd.read_csv('keywords.csv')
 st.dataframe(df) 
 
-
-st.subheader('Bar Chart 📊')
+st.subheader('Top 15 keywords 📊')
 st.bar_chart(df,x = 'keywords',y='amount')
 
-st.subheader('Most Wanted📊')
-df1 = pd.DataFrame([['Excel','Degree','SQL','Making reports','SSIS','Tableau','Python'],[416,340,328,298,224,153,147]],
-                   columns=['Most_wanted','Amount'])
-st.bar_chart(df1)
+st.subheader('Top 15 keywords 📊')
 # Image upload and text input section
 st.subheader('An Image')
 st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg')
@@ -56,3 +56,4 @@ with tab2:
     st.write('Even I love it 🤤')
   if disagree:
     st.write('You are boring 😒')
+
