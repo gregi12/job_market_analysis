@@ -20,7 +20,7 @@ with tab1:
   st.subheader('Top 5 by amount of offers found📊')
   fig = plt.figure()
   colors = ['#D2042D', '#702963', '#C04000','#8F8585','#bdbdbd'] 
-  plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black',linewidth=3)
+  plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black',linewidth=2)
   plt.xticks(rotation=90)
   plt.ylabel('Amount')
   # Display chart in Streamlit app
