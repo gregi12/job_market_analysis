@@ -11,8 +11,7 @@ st.set_page_config(
 )
 # Expander section
 st.subheader("Hello, I'm glad to present you results of my analysis")
-with st.expander("Here I explain how I obtained data"):
-  st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
+
 
 # Sidebar section
 with st.sidebar:
@@ -33,6 +32,8 @@ if greet:
   st.markdown(original_title, unsafe_allow_html=True)
   st.write(' ')
 
+  with st.expander("Here I explain how I obtained data"):
+    st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
     # Tworzenie trzech przycisków w trzech kolumnach
   col1, col2, col3 = st.beta_columns(3)
 
