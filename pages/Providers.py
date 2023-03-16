@@ -19,8 +19,8 @@ with tab1:
   
   st.subheader('Top 5 by amount of offers found📊')
   fig = plt.figure()
-  colors = ['#D2042D', '#702963', '#C04000','#8F8585','#bdbdbd'] + [] * 2
-  plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black')
+  colors = ['#D2042D', '#702963', '#C04000','#8F8585','#bdbdbd'] 
+  plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black',linewidths=3)
   plt.xticks(rotation=90)
   plt.ylabel('Amount')
   # Display chart in Streamlit app
@@ -33,12 +33,13 @@ with tab2:
 # Create bar chart sorted by value
   labels = [key for key in providers['Via']]
   keys = [key for key in providers['Percentage']]
-
+  colors = ['#D2042D', '#702963', '#C04000','#8F8585','#bdbdbd'] 
   fig, ax = plt.subplots()
-  colors = ['#de2d26', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
+  colors = 
   ax.pie(keys, labels=labels, 
         startangle = 90,
-        autopct='%1.1f%%'
+        autopct='%1.1f%%',
+        color=colors
         )
   
   st.pyplot(fig)
