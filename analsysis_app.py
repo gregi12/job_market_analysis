@@ -36,9 +36,8 @@ with tab1:
   fig = plt.figure()
   plt.bar(df['keywords'], df['amount'])
   plt.xticks(rotation=90)
-  plt.title('Sorted Bar Chart')
-  plt.xlabel('Category')
-  plt.ylabel('Value')
+  plt.xlabel('Keyword')
+  plt.ylabel('Amount')
 
   # Display chart in Streamlit app
   st.pyplot()
