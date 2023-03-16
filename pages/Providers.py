@@ -19,7 +19,7 @@ with tab1:
   
   st.subheader('Top 5 by amount of offers found📊')
   fig = plt.figure()
-  colors = ['#de2d26', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
+  colors = ['#D2042D', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
   plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black')
   plt.xticks(rotation=90)
   plt.ylabel('Amount')
