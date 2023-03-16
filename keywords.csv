@@ -1,16 +1,16 @@
-keywords,amount
-excel,610
-sql,558
-degree,497
-reports,426
-ssis,340
-database,327
-power bi,316
-python,310
-tableau,280
-senior,235
-git,192
-data mining,190
-business intelligence,166
-agile,107
-data warehouse,105
+0,keywords,amount
+1,excel,610,
+2,sql,558
+3,degree,497
+4,reports,426
+5,ssis,340
+6,database,327
+7,power bi,316
+8,python,310
+9,tableau,280
+10,senior,235
+11,git,192
+12,data mining,190
+13,business intelligence,166
+14,agile,107
+15,data warehouse,105
