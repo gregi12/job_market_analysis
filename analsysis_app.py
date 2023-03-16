@@ -33,8 +33,8 @@ if greet:
   st.write(' ')
 
   st.write('If someone is wondering...')
-    with st.expander("Here I explain how I obtained data"):
-      st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
+  with st.expander("Here I explain how I obtained data"):
+    st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
     # Tworzenie trzech przycisków w trzech kolumnach
   col1, col2, col3 = st.beta_columns(3)
 
