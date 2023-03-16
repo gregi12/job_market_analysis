@@ -35,7 +35,7 @@ with tab2:
   keys = [key for key in providers['Percentage']]
   colors = ['#D2042D', '#702963', '#C04000','#8F8585','#bdbdbd'] 
   fig, ax = plt.subplots()
-  colors = 
+  
   ax.pie(keys, labels=labels, 
         startangle = 90,
         autopct='%1.1f%%',
