@@ -1,3 +1,4 @@
+import os
 # Pobierz aktualną ścieżkę do folderu, w którym znajduje się plik Top_key.py
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
