@@ -36,7 +36,6 @@ with tab2:
   colors = ['#de2d26', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
   ax.pie(keys, labels=labels, 
         startangle = 90,
-        shadow = True,
         autopct='%1.1f%%'
         )
   
