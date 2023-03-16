@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt
-
+import matplotlib.pyplot as plt
 
 st.set_page_config(
   page_title='Job market analsysis',
@@ -24,10 +24,22 @@ with st.sidebar:
 
 df =pd.read_csv('keywords.csv')
 df = df.sort_values('amount',ascending=False)
-chart = alt.Chart(df).mark_bar().encode(
-    x='keywords',
-    y='amount'
-)
+
+# Create bar chart sorted by value
+plt.bar(df['keywords'], data['amount'])
+plt.xticks(rotation=90)
+plt.title('Sorted Bar Chart')
+plt.xlabel('Category')
+plt.ylabel('Value')
+
+# Display chart in Streamlit app
+st.pyplot()
+
+
+
+
+
+
 
 # Display chart in Streamlit app
 st.altair_chart(chart, use_container_width=True)
