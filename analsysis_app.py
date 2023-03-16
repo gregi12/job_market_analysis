@@ -32,14 +32,16 @@ if greet:
   st.markdown(original_title, unsafe_allow_html=True)
   st.write(' ')
 
-  with st.expander("Here I explain how I obtained data"):
-    st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
+  
     # Tworzenie trzech przycisków w trzech kolumnach
   col1, col2, col3 = st.beta_columns(3)
 
   # Dodawanie przycisków do kolumn
   with col1:
       if st.button("About analysis"):
+        st.write('If someone is wondering...')
+        with st.expander("Here I explain how I obtained data"):
+          st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
         original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data.</p>'
         st.markdown(original_title, unsafe_allow_html=True)
   with col2:
