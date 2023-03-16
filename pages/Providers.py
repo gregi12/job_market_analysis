@@ -20,7 +20,7 @@ with tab1:
   st.subheader('Top 15 keywords by amount 📊')
   fig = plt.figure()
   colors = ['r', 'b', 'g'] + ['grey'] * 2
-  plt.bar(providers['Via'], providers['Amount'],color=colors, edgecolor='black')
+  plt.bar(providers['Via'], providers['Amount'],color=colors)
   plt.xticks(rotation=90)
   plt.ylabel('Amount')
   # Display chart in Streamlit app
@@ -31,7 +31,7 @@ with tab2:
 # Create bar chart sorted by value
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
-  plt.bar(providers['Via'], providers['Percentage'],color=colors, edgecolor='black')
+  plt.bar(providers['Via'], providers['Percentage'],color=colors)
   colors = ['r', 'b', 'g'] + ['grey'] * 2
   # ustawienie kolorów słupków
   plt.xticks(rotation=90)
