@@ -17,7 +17,7 @@ tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 
 with tab1:
   
-  st.subheader('Top 15 keywords by amount 📊')
+  st.subheader('Top 5 by amount of offers found📊')
   fig = plt.figure()
   colors = ['#de2d26', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
   plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black')
@@ -28,6 +28,8 @@ with tab1:
   
 
 with tab2:
+
+  st.subheader('Top 5 by amount of offers found📊')
 # Create bar chart sorted by value
   labels = [key for key in providers['Via']]
   keys = [key for key in providers['Percentage']]
