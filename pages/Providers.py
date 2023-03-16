@@ -32,7 +32,7 @@ with tab2:
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
   plt.bar(providers['Via'], providers['Percentage'],color=colors)
-  colors = ['r', 'b', 'g'] + ['grey'] * 2
+  colors = ['#de2d26', '#2b8cbe', 'g'] + ['grey'] * 2
   # ustawienie kolorów słupków
   plt.xticks(rotation=90)
   plt.ylabel('%')
