@@ -11,6 +11,7 @@ st.set_page_config(
   page_icon = '📊'
 )
 # Expander section
+st.subheader("Hello, I'm glad to present you results of my analysis")
 with st.expander("Here I explain how I obtained data"):
   st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
 
@@ -27,7 +28,7 @@ df =pd.read_csv('keywords.csv')
 df = df.sort_values('amount',ascending=False)
 
 # Tabs section
-st.subheader('Choose format of the data')
+st.write('Choose format of the data')
 tab1, tab2 = st.tabs(["Quantity", "Percentage"])
 
 with tab1:
