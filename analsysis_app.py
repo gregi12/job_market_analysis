@@ -29,12 +29,14 @@ df =pd.read_csv('keywords.csv')
 st.dataframe(df) 
 
 st.subheader('Top 15 keywords 📊')
-st.bar_chart(df,x = 'keywords',y='amount')
+st.bar_chart(df,x = 'keywords',y='amount',sort=None)
 
-st.subheader('Top 15 keywords 📊')
+st.subheader('Top offers providers 📊')
 # Image upload and text input section
-st.subheader('An Image')
-st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg')
+providers = pd.read_csv('Diffrent_sites.csv')
+providers_chart = alt.Chart(providers).mark_bar().encode(
+  x= profiders.index,y= df['via']
+)
 
 st.subheader('Text Input')
 greet = st.text_input('Write your name, please!')
