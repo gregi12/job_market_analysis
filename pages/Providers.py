@@ -32,11 +32,14 @@ with tab2:
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
   colors = ['#de2d26', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
-  plt.bar(providers['Via'], providers['Percentage'],color=colors,edgecolor='black')
+  plt.pie(providers['Via'], providers['Percentage'],color=colors,
+        startangle = 90,
+        shadow = True,
+        explode =(0,0.1,0,0,0),
+        autopct ='%1.1f%%')
   
   # ustawienie kolorów słupków
-  plt.xticks(rotation=90)
-  plt.ylabel('%')
+ 
 
   # Display chart in Streamlit app
   st.pyplot(fig)
