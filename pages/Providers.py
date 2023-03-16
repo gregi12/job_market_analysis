@@ -19,7 +19,7 @@ with tab1:
   
   st.subheader('Top 15 keywords by amount 📊')
   fig = plt.figure()
-  colors = ['r', 'b', 'g'] + ['grey'] * 12
+  colors = ['r', 'b', 'g'] + ['grey'] * 2
   plt.bar(providers['Via'], providers['Amount'],color=colors, edgecolor='black')
   plt.xticks(rotation=90)
   plt.ylabel('Amount')
@@ -32,7 +32,7 @@ with tab2:
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
   plt.bar(providers['Via'], providers['Percentage'],color=colors, edgecolor='black')
-  colors = ['r', 'b', 'g'] + ['grey'] * 12
+  colors = ['r', 'b', 'g'] + ['grey'] * 2
   # ustawienie kolorów słupków
   plt.xticks(rotation=90)
   plt.ylabel('%')
