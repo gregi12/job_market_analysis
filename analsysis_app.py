@@ -10,8 +10,9 @@ st.set_page_config(
   page_icon = '📊'
 )
 # Expander section
-st.subheader("Hello, I'm glad to present you results of my analysis")
 
+original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Good day to you, mysterious one, I would like to present you results of my analysis</p>'
+st.markdown(original_title, unsafe_allow_html=True)
 
 # Sidebar section
 with st.sidebar:
@@ -24,7 +25,7 @@ with st.sidebar:
 
 
 
-st.subheader('Follow instruction below to continue!')
+st.subheader('But firstly, follow instruction below to continue!')
 greet = st.text_input('Write your name, nickname or whatever!')
 if greet:
   st.write('👋 Hey ',greet,", nice to meet you!" )
