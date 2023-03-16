@@ -29,7 +29,7 @@ df =pd.read_csv('keywords.csv')
 st.dataframe(df) 
 
 st.subheader('Top 15 keywords 📊')
-st.bar_chart(df,x = 'keywords',y='amount',sort=None)
+st.bar_chart(df,x = 'keywords',y='amount')
 
 st.subheader('Top offers providers 📊')
 # Image upload and text input section
