@@ -41,12 +41,14 @@ if greet:
   # Dodawanie przycisków do kolumn
   with col1:
       if st.button("About analysis"):
-        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data.</p>'
+        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data. I extracted valuable data using regular expressions(regex)</p>'
         st.markdown(original_title, unsafe_allow_html=True)
   with col2:
       if st.button("About app"):
         original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">In upper left corner you can see navigation links, every one of them is for specific part of visualization . Whenever there is info about percentage , it means percentage of all offers after duplicates were deleted, so eventually on 994 offers. </p>'
         st.markdown(original_title, unsafe_allow_html=True)
+        with st.expander("More info here!"):
+          st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/final_analysis.py")
 
   with col3:
       if st.button("About me"):
