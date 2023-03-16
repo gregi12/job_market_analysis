@@ -26,17 +26,28 @@ with st.sidebar:
 df =pd.read_csv('keywords.csv')
 df = df.sort_values('amount',ascending=False)
 
-# Create bar chart sorted by value
-st.subheader('Top 15 keywords 📊')
-fig = plt.figure()
-plt.bar(df['keywords'], df['amount'])
-plt.xticks(rotation=90)
-plt.title('Sorted Bar Chart')
-plt.xlabel('Category')
-plt.ylabel('Value')
+# Tabs section
+st.subheader('Tabs')
+tab1, tab2 = st.tabs(["Quantity", "Percentage"])
 
-# Display chart in Streamlit app
-st.pyplot()
+with tab1:
+
+  st.subheader('Top 15 keywords 📊')
+  fig = plt.figure()
+  plt.bar(df['keywords'], df['amount'])
+  plt.xticks(rotation=90)
+  plt.title('Sorted Bar Chart')
+  plt.xlabel('Category')
+  plt.ylabel('Value')
+
+  # Display chart in Streamlit app
+  st.pyplot()
+  
+
+with tab2:
+# Create bar chart sorted by value
+  st.write('WOW!')
+  st.image("https://i.gifer.com/DJR3.gif", width=400)
 
 
 
