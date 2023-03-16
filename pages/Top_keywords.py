@@ -22,10 +22,9 @@ with tab1:
 
   st.subheader('Top 15 keywords by amount 📊')
   fig = plt.figure()
-  plt.bar(df['keywords'], df['amount'])
+  plt.bar(df['keywords'], df['amount'],color=colors, edgecolor='black')
   plt.xticks(rotation=90)
   plt.ylabel('Amount')
-
   # Display chart in Streamlit app
   st.pyplot(fig)
   
@@ -34,12 +33,18 @@ with tab2:
 # Create bar chart sorted by value
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
-  plt.bar(df['keywords'], df['percentage'])
+  plt.bar(df['keywords'], df['percentage'],color=colors, edgecolor='black')
+  colors = ['r', 'b', 'g'] + ['grey'] * 12
+  # ustawienie kolorów słupków
   plt.xticks(rotation=90)
   plt.ylabel('%')
 
   # Display chart in Streamlit app
   st.pyplot(fig)
+
+
+
+
 
 with tab3:
   st.write(df)
