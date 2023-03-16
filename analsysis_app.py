@@ -26,7 +26,7 @@ df =pd.read_csv('keywords.csv')
 df = df.sort_values('amount',ascending=False)
 chart = alt.Chart(df).mark_bar().encode(
     x='keywords',
-    y=alt.Y('amount', sort='-y')
+    y='amount'
 )
 
 # Display chart in Streamlit app
