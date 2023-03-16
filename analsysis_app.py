@@ -37,7 +37,7 @@ providers = pd.read_csv('Diffrent_sites.csv')
 providers_chart = alt.Chart(providers).mark_bar().encode(
   x= [key for key in providers.index],y= df['via']
 )
-
+st.altair_chart(providers_chart,use_container_width=True)
 st.subheader('Text Input')
 greet = st.text_input('Write your name, please!')
 st.write('👋 Hey!', greet)
