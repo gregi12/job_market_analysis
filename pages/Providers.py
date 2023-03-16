@@ -30,17 +30,14 @@ with tab1:
 with tab2:
 # Create bar chart sorted by value
   st.subheader('Top 15 keywords by percentage 📊')
-  fig = plt.figure()
+  fig, ax = plt.subplots()
   colors = ['#de2d26', '#2b8cbe', '#a1d99b'] + ['#bdbdbd'] * 2
-  plt.pie(providers['Percentage'], labels=providers['Via'], color=colors,
+  ax.pie(providers['Percentage'], labels=providers['Via'], color=colors,
         startangle = 90,
-        shadow = True
+        shadow = True,
+        autopct='%1.1f%%'
         )
   
-  # ustawienie kolorów słupków
- 
-
-  # Display chart in Streamlit app
   st.pyplot(fig)
 
 
