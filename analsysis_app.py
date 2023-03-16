@@ -35,7 +35,7 @@ st.subheader('Top offers providers 📊')
 # Image upload and text input section
 providers = pd.read_csv('Diffrent_sites.csv')
 providers_chart = alt.Chart(providers).mark_bar().encode(
-  x= [key for key in providers.index],y= df['via']
+  x= providers.index,y= df['via'].values
 )
 st.altair_chart(providers_chart,use_container_width=True)
 st.subheader('Text Input')
