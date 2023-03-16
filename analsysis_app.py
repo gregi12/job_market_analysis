@@ -1,5 +1,4 @@
-import sys
-sys.path.append(r'C:\Users\komputer\Desktop\aktualne\environment\serpapi\job_analysis\Lib\site-packages')
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -26,7 +25,7 @@ with st.sidebar:
 
 # Dataframe and Chart display section
 st.subheader('Interactive Data Table')
-df =pd.read_csv('keywords.csv')
+df =pd.read_csv('files\\keywords.csv')
 st.dataframe(df) 
 
 st.subheader('Top 15 keywords 📊')
