@@ -33,7 +33,7 @@ with tab2:
 # Create bar chart sorted by value
   labels = [key for key in providers['Via']]
   keys = [key for key in providers['Percentage']]
-  colors = ['#D2042D', '#05D832', '#D5E901','#8F8585','#bdbdbd'] 
+  colors = ['#D2042D', '#05D832', '#F1FC00','#8F8585','#bdbdbd'] 
   fig, ax = plt.subplots()
   
   ax.pie(keys, labels=labels, 
