@@ -11,8 +11,7 @@ st.set_page_config(
 )
 # Expander section
 with st.expander("Here I explain how I obtained data"):
-  st.write("""Trying to add a data table, chart, sidebar button with 
-          ballons, an image, text input & exploring tabs!""")
+  st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/getting_data.py")
 
 # Sidebar section
 with st.sidebar:
