@@ -25,23 +25,9 @@ with st.sidebar:
     st.write(' ')
 
 
-
-
-
-
-
-
-
-# Dataframe and Chart display section
-st.subheader('Interactive Data Table')
-
-st.dataframe(df) 
-
-
-
 st.subheader('Top offers providers 📊')
 # Image upload and text input section
-providers = pd.read_csv('Diffrent_sites.csv')
+providers = pd.read_csv('files\\keywordsfull.csv')
 st.write(providers)
 #providers_chart = alt.Chart(providers).mark_bar().encode(
  # x=alt.X('providers', sort=None),y= 'via'

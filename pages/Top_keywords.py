@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Uploading dataframe
-df =pd.read_csv('keywordsfull.csv')
+df =pd.read_csv('..\\files\\keywordsfull.csv')
 df = df.sort_values('amount',ascending=False)
 
 # Tabs section
