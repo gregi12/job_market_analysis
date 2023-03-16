@@ -25,28 +25,10 @@ with st.sidebar:
     st.write(' ')
 
 
-st.subheader('Top offers providers 📊')
-# Image upload and text input section
 
 st.subheader('Text Input')
 greet = st.text_input('Write your name, please!')
 st.write('👋 Hey!', greet)
 
 
-# Tabs section
-st.subheader('Tabs')
-tab1, tab2 = st.tabs(["TAB 1", "TAB 2"])
-
-with tab1:
-  st.write('WOW!')
-  st.image("https://i.gifer.com/DJR3.gif", width=400)
-
-with tab2:
-  st.write('Do you like ice cream? 🍨')
-  agree = st.checkbox('Yes! I love it')
-  disagree = st.checkbox("Nah! 😅")
-  if agree:
-    st.write('Even I love it 🤤')
-  if disagree:
-    st.write('You are boring 😒')
 
