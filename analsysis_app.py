@@ -23,7 +23,7 @@ with st.sidebar:
     st.write(' ')
 
 df =pd.read_csv('keywords.csv')
-df = df.sort_values('Amount',ascending=False)
+df = df.sort_values('amount',ascending=False)
 chart = alt.Chart(df).mark_bar().encode(
     x='keywords',
     y=alt.Y('amount', sort='-y')
