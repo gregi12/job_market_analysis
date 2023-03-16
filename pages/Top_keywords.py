@@ -24,7 +24,6 @@ with tab1:
   fig = plt.figure()
   plt.bar(df['keywords'], df['amount'])
   plt.xticks(rotation=90)
-  plt.xlabel('Keyword')
   plt.ylabel('Amount')
 
   # Display chart in Streamlit app
@@ -37,7 +36,6 @@ with tab2:
   fig = plt.figure()
   plt.bar(df['keywords'], df['percentage'])
   plt.xticks(rotation=90)
-  plt.xlabel('Keyword')
   plt.ylabel('%')
 
   # Display chart in Streamlit app
