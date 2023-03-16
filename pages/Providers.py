@@ -31,7 +31,7 @@ with tab2:
 # Create bar chart sorted by value
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
-  plt.bar(providers['Via'], providers['percentage'],color=colors, edgecolor='black')
+  plt.bar(providers['Via'], providers['Percentage'],color=colors, edgecolor='black')
   colors = ['r', 'b', 'g'] + ['grey'] * 12
   # ustawienie kolorów słupków
   plt.xticks(rotation=90)
