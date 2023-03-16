@@ -22,14 +22,16 @@ with st.sidebar:
     st.balloons()
   else:
     st.write(' ')
+    
+st.subheader('Top 15 keywords 📊')
+st.bar_chart(df,x = 'keywords',y='amount')
 
 # Dataframe and Chart display section
 st.subheader('Interactive Data Table')
 df =pd.read_csv('keywords.csv')
 st.dataframe(df) 
 
-st.subheader('Top 15 keywords 📊')
-st.bar_chart(df,x = 'keywords',y='amount')
+
 
 st.subheader('Top offers providers 📊')
 # Image upload and text input section
