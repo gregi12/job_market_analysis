@@ -25,7 +25,7 @@ with st.sidebar:
 
 # Dataframe and Chart display section
 st.subheader('Interactive Data Table')
-df =pd.read_csv('files\\keywords.csv')
+df =pd.read_csv('keywords.csv')
 st.dataframe(df) 
 
 st.subheader('Top 15 keywords 📊')
