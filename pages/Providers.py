@@ -38,7 +38,7 @@ with tab2:
         autopct='%1.1f%%'
         )
   
-  st.pyplot(fig)
+  st.pyplot(ax)
 
 
 
