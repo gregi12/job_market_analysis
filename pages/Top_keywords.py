@@ -1,3 +1,7 @@
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+
 # Uploading dataframe
 df =pd.read_csv('keywordsfull.csv')
 df = df.sort_values('amount',ascending=False)
