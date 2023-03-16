@@ -28,7 +28,9 @@ with st.sidebar:
 
 st.subheader('Text Input')
 greet = st.text_input('Write your name, please!')
-st.write('👋 Hey!', greet)
+if greet:
+  st.write('👋 Hey! ',greet )
+  st.write('')
 
 
 
