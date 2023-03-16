@@ -26,11 +26,11 @@ with st.sidebar:
 
 
 
-st.subheader('Text Input')
+st.subheader('Follow instruction below to continue!')
 greet = st.text_input('Write your name, please!')
 if greet:
-  st.write('👋 Hey! ',greet )
-  st.write('')
+  st.write('👋 Hey! ',greet," it's nice to meet you" )
+  st.write('My name is Grzegorz and as we already know each other and you are still here I will give brief overview of this analysis, app and maybe few words about me. ')
 
 
 
