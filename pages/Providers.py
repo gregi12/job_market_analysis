@@ -65,4 +65,4 @@ with tab2:
 
 
 with tab3:
-  st.write(providers)
+  st.write(full_provid)
