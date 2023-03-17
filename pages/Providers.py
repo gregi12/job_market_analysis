@@ -28,21 +28,23 @@ with tab1:
   
 
 with tab2:
-
-  st.subheader('Top 5 by amount of offers found📊')
-# Create bar chart sorted by value
-  labels = [key for key in providers['Via']]
-  keys = [key for key in providers['Percentage']]
-  colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585','#bdbdbd'] 
-  fig, ax = plt.subplots()
-  
-  ax.pie(keys, labels=labels, 
-        startangle = 90,
-        autopct='%1.1f%%',
-        colors=colors
-        )
-  
-  st.pyplot(fig)
+  taby1,taby2 = st.tabs(['Distribution in top5','Distribution overall'])
+  with taby1:
+    st.subheader('Distribution in top5 📊')
+  # Create bar chart sorted by value
+    labels = [key for key in providers['Via']]
+    keys = [key for key in providers['Percentage']]
+    colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585','#bdbdbd'] 
+    fig, ax = plt.subplots()
+    
+    ax.pie(keys, labels=labels, 
+          startangle = 90,
+          autopct='%1.1f%%',
+          colors=colors
+          )
+    
+    st.pyplot(fig)
+  with taby2:
 
 
 
