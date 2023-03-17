@@ -50,7 +50,8 @@ with tab2:
     labels = [key for key in full_provid['Via'][:6]]
     labels.append('Rest')
     keys = [key for key in providers['Percentage'][:6]]
-    keys.append((44.16))
+    last = 44.16
+    keys.append(last)
     colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585','#bdbdbd'] 
     fig, ax = plt.subplots()
     
