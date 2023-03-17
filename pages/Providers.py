@@ -47,11 +47,11 @@ with tab2:
   with taby2:
     st.subheader('Distribution overall📊')
   # Create bar chart sorted by value
-    labels = [key for key in full_provid['Via'][:6]]
+    keys = [19.91,6.54,6.13,4.62,4.32,2.61,55.83]
+  
+    labels = [key for key in full_provid['Percentage'][:6]]
     labels.append('Rest')
-    keys = [key for key in full_provid['Percentage'][:6]]
-    last = 44.16
-    keys.append(last)
+    
     colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585','#bdbdbd'] 
     fig, ax = plt.subplots()
     
