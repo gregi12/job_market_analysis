@@ -8,8 +8,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Utwórz ścieżkę do pliku csv używając ścieżki bazowej i folderu files
 csv_path = os.path.join(BASE_DIR, '..', 'files', 'Sitesfull.csv')
 providers = pd.read_csv(csv_path)
-
-
+provid = os.path.join(BASE_DIR,'..','files','Providers.csv')
+full_provid = pd.read_csv(provid)
 st.subheader('Top offers providers 📊')
 
 st.write('Choose format of the data')
@@ -45,7 +45,20 @@ with tab2:
     
     st.pyplot(fig)
   with taby2:
-
+    st.subheader('Distribution overall📊')
+  # Create bar chart sorted by value
+    labels = [key for key in full_provid['Via'][:6]]
+    labels.append('Rest')
+    keys = [key for key in providers['Percentage'][:6]]
+    keys.append((439/994)*100)
+    colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585','#bdbdbd'] 
+    fig, ax = plt.subplots()
+    
+    ax.pie(keys, labels=labels, 
+          startangle = 90,
+          autopct='%1.1f%%')
+    
+    st.pyplot(fig)
 
 
 
