@@ -30,7 +30,8 @@ try:
   greet = st.text_input('Write your name, nickname or whatever!')
   submit = st.button("Let's go")
   if submit:
-      st.session_state["greet"] = greet
+
+    st.session_state["greet"] = greet
   if st.session_state["greet"]:
     st.write('👋 Hey ',greet,", nice to meet you!" )
     original_title = '<p style="font-family:Courier; font-size: 20px; font-weight:600;">My name is Grzegorz. As we already know each other and you are still here, I will give brief overview of this analysis, app and maybe few words about me.</p>'
