@@ -12,13 +12,7 @@ csv_path = os.path.join(BASE_DIR, '..', 'files', 'Typefull.csv')
 # Wczytaj plik csv do dataframe
 df = pd.read_csv(csv_path)
 # Uploading dataframe
-
-
-# Tabs section
-st.subheader("Schedule type ")
-st.write('Choose format of the data')
-tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
-
+ 
 with tab1:
     st.subheader('types of contract📊')
     fig = plt.figure()
@@ -30,4 +24,19 @@ with tab1:
     st.pyplot(fig)
 
 with tab2:
+    labels = [key for key in df['Type']]
+    keys = [key for key in df['Percentage']]
+    colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585'] 
+    fig, ax = plt.subplots()
+    
+    ax.pie(keys, labels=labels, 
+          startangle = 90,
+          autopct='%1.1f%%',
+          colors=colors
+          )
+    
+    st.pyplot(fig)
+
+
+with tab3:
     st.write(df)
