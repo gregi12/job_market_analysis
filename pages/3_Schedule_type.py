@@ -34,7 +34,7 @@ with tab2:
     fig, ax = plt.subplots()
     
     ax.pie(keys, labels=labels, 
-          startangle = 90,
+          startangle = 0,
           autopct='%1.1f%%',
           colors=colors,
           explode=explode
