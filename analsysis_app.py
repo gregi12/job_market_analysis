@@ -32,7 +32,7 @@ try:
   submit = st.button("Let's go")
   if submit:
     if greet=="":
-      st.session_state["greet"] = "Stranger"
+      st.session_state["greet"] = ""
     else:
       st.session_state["greet"] = greet
   if st.session_state["greet"]:
