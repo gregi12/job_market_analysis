@@ -28,7 +28,7 @@ with tab2:
     labels = [key for key in df['Type']]
     keys = [key for key in df['Percentage']]
     colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585'] 
-    explode = (0, 0.1, 0, 0)
+    explode = (0.1, 0.1, 0.1, 0.1)
     fig, ax = plt.subplots()
     
     ax.pie(keys, labels=labels, 
