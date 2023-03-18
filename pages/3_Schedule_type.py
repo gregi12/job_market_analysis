@@ -15,7 +15,6 @@ df = pd.read_csv(csv_path)
 tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 
 with tab1:
-    plt.style.use('_mpl-gallery')
     st.subheader('types of contract📊')
     fig = plt.figure()
     colors = ['#D2042D', '#702963', '#C04000','#8F8585'] 
