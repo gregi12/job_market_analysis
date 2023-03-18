@@ -22,7 +22,6 @@ with tab1:
   
   st.subheader('Top 15 keywords by amount 📊')
   colors = ['r', 'b', 'g'] + ['grey'] * 12
-  plt.style.use('_mpl-gallery')
   fig = plt.figure()
   plt.bar(df['keywords'], df['amount'],color=colors, edgecolor='black')
   plt.xticks(rotation=90)
