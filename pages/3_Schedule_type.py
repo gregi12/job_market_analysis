@@ -20,10 +20,10 @@ st.write('Choose format of the data')
 tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 
 with tab1:
-    st.subheader('Top types of contract📊')
+    st.subheader('types of contract📊')
     fig = plt.figure()
-    colors = ['#D2042D', '#702963', '#C04000','#8F8585','#bdbdbd'] 
-    plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black',linewidth=1)
+    colors = ['#D2042D', '#702963', '#C04000','#8F8585'] 
+    plt.bar(df['Type'], df['Amount'],color=colors,edgecolor='black',linewidth=1)
     plt.xticks(rotation=90)
     plt.ylabel('Amount')
     # Display chart in Streamlit app
