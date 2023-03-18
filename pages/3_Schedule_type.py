@@ -33,7 +33,8 @@ with tab2:
     ax.pie(keys, labels=labels, 
           startangle = 90,
           autopct='%1.1f%%',
-          colors=colors
+          colors=colors,
+          pctdistance = 1
           )
     
     st.pyplot(fig)
