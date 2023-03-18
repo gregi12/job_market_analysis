@@ -56,7 +56,7 @@ try:
           st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/final_analysis.py")
     with col2:
       if st.button("About app"):
-        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">In upper left corner you can see navigation links, every one of them is for specific part of visualization . Whenever there is info about percentage , it means percentage of all offers after duplicates were deleted, so eventually on 994 offers. I would suggest to use light theme, everything is more clear then. Theme can be changed in settings in upper right corner.</p>'
+        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">In upper left corner you can see navigation links, every one of them is for specific part of visualization . Whenever there is info about percentage , it means percentage of all offers after duplicates were deleted, so eventually on 994 offers. I would suggest to use light theme, everything is more clear then. Theme can be changed in settings in upper right corner</p>'
         st.markdown(original_title, unsafe_allow_html=True)
           
 
