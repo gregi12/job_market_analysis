@@ -28,3 +28,6 @@ with tab1:
     plt.ylabel('Amount')
     # Display chart in Streamlit app
     st.pyplot(fig)
+
+with tab2:
+    st.write(df)
