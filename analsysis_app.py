@@ -30,7 +30,7 @@ try:
   greet = st.text_input('Write your name, nickname or whatever!')
   submit = st.button("Let's go")
   if submit:
-    if st.session_state["greet"] == "":
+    if greet=="":
       st.session_state["greet"] = "Stranger"
     else:
       st.session_state["greet"] = greet
