@@ -29,7 +29,7 @@ with tab2:
     labels.append('Rest')
     keys = [key for key in df['Percentage'][:2]]
     keys.append(1.83)
-    colors = ['#CD200C', '#05D832', '#F1FC00'] 
+    colors = ['#F70000', '#05D832', '#F1FC00'] 
     explode = (0,0,0.1)
     fig, ax = plt.subplots()
     
