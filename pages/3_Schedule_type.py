@@ -25,10 +25,12 @@ with tab1:
     st.pyplot(fig)
 
 with tab2:
-    labels = [key for key in df['Type']]
-    keys = [key for key in df['Percentage']]
-    colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585'] 
-    explode = (0.1, 0.1, 0.1, 0.1)
+    labels = [key for key in df['Type'][:2]]
+    labels.append('Rest')
+    keys = [key for key in df['Percentage'][:2]]
+    keys.append(1.83)
+    colors = ['#FC1A00', '#05D832', '#F1FC00'] 
+    explode = (0.1)
     fig, ax = plt.subplots()
     
     ax.pie(keys, labels=labels, 
