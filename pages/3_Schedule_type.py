@@ -11,8 +11,9 @@ csv_path = os.path.join(BASE_DIR, '..', 'files', 'Typefull.csv')
 
 # Wczytaj plik csv do dataframe
 df = pd.read_csv(csv_path)
-# Uploading dataframe
- 
+
+tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
+
 with tab1:
     st.subheader('types of contract📊')
     fig = plt.figure()
