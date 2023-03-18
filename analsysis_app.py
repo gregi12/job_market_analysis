@@ -27,7 +27,7 @@ with st.sidebar:
 
 st.subheader('But firstly, follow instruction below to continue!')
 
-greet = st.text_input('Write your name, nickname or whatever!',st.session_state["greet"])
+greet = st.text_input('Write your name, nickname or whatever!')
 submit = st.button("Let's go")
 if submit:
   if greet == "":
