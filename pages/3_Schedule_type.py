@@ -30,7 +30,7 @@ with tab2:
     keys = [key for key in df['Percentage'][:2]]
     keys.append(1.83)
     colors = ['#F70000', '#05D832', '#F1FC00'] 
-    explode = (0.1,0.1,0.1)
+    explode = (0.1,0,0)
     fig, ax = plt.subplots()
     
     ax.pie(keys, labels=labels, 
