@@ -23,8 +23,7 @@ with st.sidebar:
   else:
     st.write(' ')
 
-if "greet" not in st.session_state:
-  st.session_state["greet"] = ""
+
 
 st.subheader('But firstly, follow instruction below to continue!')
 
@@ -35,7 +34,7 @@ if submit:
     st.session_state["greet"] = ""
   else:
     st.session_state["greet"] = greet
-if greet or st.session_state["greet"] == "":
+if greet:
   st.write('👋 Hey ',greet,", nice to meet you!" )
   original_title = '<p style="font-family:Courier; font-size: 20px; font-weight:600;">My name is Grzegorz. As we already know each other and you are still here, I will give brief overview of this analysis, app and maybe few words about me.</p>'
   st.markdown(original_title, unsafe_allow_html=True)
